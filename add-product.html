@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Product</title>
+  <link rel="stylesheet" href="add-product.css" />
+</head>
+<body>
+  <div class="main-layout">
+    <!-- Form Section -->
+    <div class="form-section">
+      <form id="productForm">
+        <h1>Let's add your first product</h1>
+
+        <section>
+          <h2>Basic Details</h2>
+          <label>Product name</label>
+          <input type="text" placeholder="eg - anatomy book" />
+
+          <label>Product Description</label>
+          <textarea placeholder="Input text"></textarea>
+
+          <label>Add Image(s)</label>
+          <div class="image-upload"></div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="skuCheck" checked />
+            <label for="skuCheck">this product has an SKU code</label>
+          </div>
+          <input type="text" placeholder="eg - PROD0001" />
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="hsnCheck" />
+            <label for="hsnCheck">this product has an HSN/SAC code</label>
+          </div>
+        </section>
+
+        <hr />
+
+        <section>
+          <h2>Pricing Details</h2>
+          <div class="checkbox-group">
+            <input type="checkbox" id="gstCheck" checked />
+            <label for="gstCheck">price inclusive of GST</label>
+          </div>
+
+          <div class="grid">
+            <input type="text" placeholder="Net price" />
+            <input type="text" placeholder="List price" />
+            <input type="text" placeholder="Discount percentage" />
+            <input type="text" placeholder="GST rate" />
+            <input type="text" placeholder="Shipping charges (if any)" />
+            <input type="text" placeholder="Stock level" />
+          </div>
+        </section>
+
+        <div class="buttons">
+          <button type="button" onclick="goBack()">‹ Back</button>
+          <button type="submit">Next</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Static Preview Section -->
+    <div class="preview-section">
+      <img src="./images/BagTheme.jpg" alt="Product" class="preview-image"/>
+      <div class="preview-details">
+        <h3>Product title</h3>
+        <p>
+          Esse minim eiusmod amet et incididunt magna consectetur laborem. Ipsum et cillum do exercitation nostrud nostrud ex. Consecutor Lorem nostrud sint adipisicing amet ipsum cupidatat Lorem adipisicing veniam officia duis exceptuer Lorem labore.
+        </p>
+        <div class="price">₹10,090</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="add-product.js"></script>
+</body>
+</html>

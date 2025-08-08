@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Product Type</title>
+  <link rel="stylesheet" href="category.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h1>Lets add a type, Category and Sub-category</h1>
+      
+      <label for="productType">Add a product type</label>
+      <input type="text" id="productType" placeholder="eg - books" required />
+
+      <label for="category">Add a category (optional)</label>
+      <input type="text" id="category" placeholder="eg - Academic book" />
+
+      <label for="subCategory">Add a sub-category (optional)</label>
+      <input type="text" id="subCategory" placeholder="eg - medical book" />
+
+      <div class="buttons">
+        <a href="index.html" class="back-btn">Back</a>
+        <button class="next-btn" >Next</button>
+      </div>
+    </div>
+
+    <div class="diagram-section">
+      <div class="box product-type">Product type</div>
+      <div class="arrow down"></div>
+      <div class="box category">Category</div>
+      <div class="arrow down"></div>
+      <div class="box sub-category">Sub-Category</div>
+      <div class="arrow down"></div>
+      <div class="box product">Product</div>
+    </div>
+  </div>
+</body>
+</html>

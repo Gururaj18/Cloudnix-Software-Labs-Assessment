@@ -1,0 +1,137 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Layout */
+.main-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Scrollable Form Section */
+.form-section {
+   
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+/* Preview Section */
+.preview-section {
+  width: 30%;
+  background-color: white;
+  border-left: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.preview-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.preview-details {
+  border: 1px solid #000;
+  padding: 10px;
+  width: 100%;
+}
+
+.preview-details h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.preview-details p {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.preview-details .price {
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Form Elements */
+form h1 {
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.image-upload {
+  width: 100%;
+  height: 120px;
+  background: #eee;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.checkbox-group {
+  margin-top: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #222;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
